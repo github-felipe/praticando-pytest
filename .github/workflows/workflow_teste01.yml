@@ -19,7 +19,7 @@ jobs:
         run: cd teste01
 
       - name: instala o poetry
-        run: Gr1N/setup-poetry@v4
+        uses: Gr1N/setup-poetry@v4
 
       - name: instala as dependencias
         run: poetry install

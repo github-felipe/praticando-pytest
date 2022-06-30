@@ -1,9 +1,6 @@
 name: workflow_teste01
 
-on:
-  push:
-    paths:
-      - 'teste01'
+on: push:
 
 jobs:
   funcionalidade_principal:

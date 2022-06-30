@@ -15,11 +15,11 @@ jobs:
         with:
           python-version: 3.8
 
-      - name: vai para o diretorio de teste
-        run: cd teste01
-
       - name: instala o poetry
         uses: Gr1N/setup-poetry@v4
+
+      - name: vai para o diretorio de teste
+        run: cd teste01
 
       - name: instala as dependencias
         run: poetry install

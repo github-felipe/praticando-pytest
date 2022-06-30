@@ -16,7 +16,7 @@ jobs:
           python-version: 3.8
 
       - name: instala o poetry
-        uses: Gr1N/setup-poetry@v4
+        run: pip install poetry
 
       - name: vai para o diretorio de teste
         run: cd teste01

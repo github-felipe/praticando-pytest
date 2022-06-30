@@ -1,0 +1,33 @@
+name: workflow_teste01
+
+on:
+  push:
+    paths:
+      - 'teste01'
+
+jobs:
+  funcionalidade_principal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: realiza o checkout
+        uses: actions/checkout@v2
+
+      - name: instala o python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: vai para o diretorio de teste
+        run: cd teste01
+
+      - name: instala o poetry
+        run: Gr1N/setup-poetry@v4
+
+      - name: instala as dependencias
+        run: poetry install
+
+      - name: entra no shell do poetry
+        run: poetry shell
+
+      - name: realiza os testes
+        run: pytest

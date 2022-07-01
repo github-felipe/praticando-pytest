@@ -17,7 +17,7 @@ def e_fatorial(valor):
 
 
 def fatorial_doque(valor):
-    from ehfatorial import e_fatorial
+    from ehfatorial.ehfatorial import e_fatorial
     from math import factorial
     if not e_fatorial(valor):
         return 'o valor inserido não é um fatorial'

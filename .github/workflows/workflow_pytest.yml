@@ -1,10 +1,10 @@
-name: workflow_ehfatorial
+name: workflow_pytest
 
 on:
   push:
 
 jobs:
-  rodando_os_testes_do_ehfatorial:
+  rodando_os_testes_do_pytest:
     runs-on: ubuntu-latest
     steps:
       - name: realiza o checkout
@@ -17,9 +17,6 @@ jobs:
 
       - name: instala o poetry
         run: pip install poetry
-
-      - name: vai para o diretorio de teste
-        run: cd ehfatorial
 
       - name: instala as dependencias
         run: poetry install

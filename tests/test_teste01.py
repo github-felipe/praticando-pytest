@@ -1,10 +1,5 @@
-from teste01 import __version__
 from pytest import mark
-from teste01 import numero_meio
-
-
-def test_version():
-    assert __version__ == '0.1.0'
+from teste01.teste01 import numero_meio
 
 
 @mark.parametrize(

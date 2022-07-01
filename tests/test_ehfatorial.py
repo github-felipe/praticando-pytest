@@ -1,11 +1,7 @@
-from tkinter.messagebox import ABORTRETRYIGNORE
-from ehfatorial import __version__
 from pytest import mark
-from ehfatorial import e_fatorial, fatorial_doque
+from ehfatorial.ehfatorial import e_fatorial, fatorial_doque
 from math import factorial
 
-def test_version():
-    assert __version__ == '0.1.0'
 
 @mark.parametrize(
     'parametro, resultado_esperado', 

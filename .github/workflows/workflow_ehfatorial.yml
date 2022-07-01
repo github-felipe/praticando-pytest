@@ -1,0 +1,28 @@
+name: workflow_ehfatorial
+
+on:
+  push:
+
+jobs:
+  funcionalidade_principal:
+    runs-on: ubuntu-latest
+    steps:
+      - name: realiza o checkout
+        uses: actions/checkout@v2
+
+      - name: instala o python 3.9
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
+
+      - name: instala o poetry
+        run: pip install poetry
+
+      - name: vai para o diretorio de teste
+        run: cd ehfatorial
+
+      - name: instala as dependencias
+        run: poetry install
+
+      - name: realiza os testes
+        run: poetry run pytest

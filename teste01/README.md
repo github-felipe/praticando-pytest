@@ -1,3 +1,2 @@
 Esta é a primeira vez que eu uso o pytest, o meu foco aqui foi ver na prática como ele funciona em um projeto bem básico desde o início.
 Este código em específico tem o objetivo de criar uma função que identifica qual é o valor mais no meio de uma sequência de números, ex: se eu mandar "12345" eu quero que a função retorne "3" pois é o valor que se encontra no meio do número 12345.
-Estou também usando o poetry para me acostumar com a usabilidade dele e por sinal estou gostando bastante.

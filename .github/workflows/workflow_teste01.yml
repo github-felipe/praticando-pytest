@@ -24,8 +24,5 @@ jobs:
       - name: instala as dependencias
         run: poetry install
 
-      - name: entra no shell do poetry
-        run: poetry shell
-
       - name: realiza os testes
-        run: pytest
+        run: poetry run pytest

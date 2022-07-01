@@ -4,7 +4,7 @@ on:
   push:
 
 jobs:
-  funcionalidade_principal:
+  rodando_os_testes_do_teste01:
     runs-on: ubuntu-latest
     steps:
       - name: realiza o checkout

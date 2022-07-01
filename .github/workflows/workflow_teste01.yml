@@ -21,8 +21,8 @@ jobs:
       - name: vai para o diretorio de teste
         run: cd teste01
 
-      - name: instala o pytest
-        run: pip install pytest
+      - name: instala as dependencias
+        run: poetry install
 
       - name: entra no shell do poetry
         run: poetry shell
